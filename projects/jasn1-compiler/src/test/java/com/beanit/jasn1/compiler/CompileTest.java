@@ -28,6 +28,22 @@ public class CompileTest {
   // Compiler.main(args);
   // }
 
+
+  @Test
+  public void testTap3Tagging() throws Exception {
+    args =
+            new String[] {
+                    "-o",
+                    generatedSrcDir,
+                    "-p",
+                    rootPackageName,
+                    "-f",
+                    "src/test/resources/TAP3_12.asn",
+                    "-dv"
+            };
+    Compiler.main(args);
+  }
+
   @Test
   public void testCompilingTagging() throws Exception {
     args =
